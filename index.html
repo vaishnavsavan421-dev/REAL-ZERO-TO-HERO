@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERO TO HERO TRADERS</title>
+
+<!-- ================= META PIXEL CODE ================= -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2065207437548463');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2065207437548463&ev=PageView&noscript=1"/>
+</noscript>
+<!-- =============== END META PIXEL ==================== -->
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* OUTER NEON BORDER */
+.card-wrap{
+  position:relative;
+  padding:6px;
+  border-radius:30px;
+}
+
+.card-wrap::before{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius:36px;
+  background:linear-gradient(
+    90deg,
+    #00f2ff,
+    #00ff88,
+    #ffb700,
+    #ff00ff,
+    #00f2ff
+  );
+  background-size:500% 500%;
+  filter:blur(18px);
+  animation:borderMove 3s linear infinite;
+  z-index:-1;
+}
+
+@keyframes borderMove{
+  0%{background-position:0% 50%}
+  100%{background-position:500% 50%}
+}
+
+/* CARD */
+.card{
+  width:90vw;
+  max-width:420px;
+  background:#050b12;
+  border-radius:26px;
+  padding:32px 24px;
+  text-align:center;
+  color:#fff;
+}
+
+/* LOGO */
+.logo-wrap{
+  position:relative;
+  width:110px;
+  height:110px;
+  margin:0 auto 16px;
+}
+
+.logo-wrap::before{
+  content:"";
+  position:absolute;
+  inset:-8px;
+  border-radius:50%;
+  background:conic-gradient(
+    #00f2ff,
+    #00ff88,
+    #ffb700,
+    #ff00ff,
+    #00f2ff
+  );
+  filter:blur(10px);
+  animation:spin 2s linear infinite;
+}
+
+@keyframes spin{
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+
+.logo{
+  position:relative;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.logo img{
+  width:80%;
+}
+
+/* TEXT */
+h1{
+  font-size:22px;
+  margin-top:10px;
+  letter-spacing:1px;
+}
+
+.sub{
+  font-size:14px;
+  color:#9aa4b2;
+  margin-top:6px;
+}
+
+.members{
+  margin:10px 0 18px;
+  color:#00ff88;
+  font-size:14px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  width:100%;
+  padding:16px;
+  border-radius:14px;
+  background:linear-gradient(90deg,#00f2ff,#00ff88);
+  color:#000;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  animation:btnPulse 1.5s infinite, btnShake 4s infinite;
+}
+
+@keyframes btnPulse{
+  0%{box-shadow:0 0 0 0 rgba(0,255,200,0.7)}
+  70%{box-shadow:0 0 0 18px rgba(0,255,200,0)}
+  100%{box-shadow:0 0 0 0 rgba(0,255,200,0)}
+}
+
+@keyframes btnShake{
+  0%,90%,100%{transform:translateX(0)}
+  92%{transform:translateX(-3px)}
+  94%{transform:translateX(3px)}
+  96%{transform:translateX(-3px)}
+  98%{transform:translateX(3px)}
+}
+
+/* LIST */
+ul{
+  list-style:none;
+  margin-top:18px;
+  font-size:14px;
+  color:#cbd5e1;
+}
+
+ul li{
+  margin:6px 0;
+}
+
+/* FOOTER */
+.footer{
+  font-size:11px;
+  color:#6b7280;
+  margin-top:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card-wrap">
+  <div class="card">
+
+    <div class="logo-wrap">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+    </div>
+
+    <h1>ZERO TO HERO TRADERS</h1>
+    <div class="sub">BankNifty • Nifty • Stock Options</div>
+    <div class="members">👥 Live Members: 33856+</div>
+
+    <a class="btn" href="https://t.me/+YTzOOdWONS8zNzI1" target="_blank">
+      Join Telegram +
+    </a>
+
+    <ul>
+      <li>• Advanced trading education & strategies</li>
+      <li>• Daily market learning & insights</li>
+      <li>• Trusted trader community on Telegram</li>
+    </ul>
+
+    <div class="footer">
+      This is for educational purposes only.<br>
+      Market investments are subject to risk.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
